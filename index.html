@@ -15,6 +15,7 @@
         <h2>1. Color changer</h2>
         <button id="gray_button">Gray</button>
         <button id="blue_button">Blue</button>
+        <button id="pink_button">Pink</button>
         <div id="color_box" class="gray"></div>        
         <script>
             const gray_button = document.getElementById("gray_button");
@@ -54,6 +55,8 @@
                  * then updates the text content of "countspan"
                  * to show the current value of "count".
                  */
+                 countspan.textContent = count;
+                 count ++;
             }
         </script>
 
@@ -70,6 +73,11 @@
                  * alert dialog stating whether the count
                  * (from part 2, above) is even or odd.
                  */
+                 if (count % 2 === 1) {
+                    alert ("even");
+                 } else {
+                     alert ("odd");
+                 }
             }
         </script>
     </body>
